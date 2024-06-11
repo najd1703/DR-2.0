@@ -15,26 +15,26 @@ public class Main {
         System.out.println("древесины " + metersOfWood + " метра!");
 
         byte ludmila = 23;
-        byte Anna = 27;
-        byte Ekaterina = 30;
+        byte anna = 27;
+        byte ekaterina = 30;
         long paper = 480;
-        int Students = ludmila + Anna + Ekaterina;
-        System.out.println("Всего учеников " + Students);
-        int Sheets = (int) (paper / (int) Students);
-        System.out.println("На каждого ученика рассчитано " + paper / Students + " листов бумаги" );
+        int students = ludmila + anna + ekaterina;
+        System.out.println("Всего учеников " + students);
+        int Sheets = (int) (paper / (int) students);
+        System.out.println("На каждого ученика рассчитано " + paper / students + " листов бумаги" );
 
         byte bottles = 16;
         byte minutes = 2;
         int bottle = bottles / minutes;
         System.out.println("В минуту машина производит " + bottle + " бутылок");
         byte twentyMinutes = 20;
-        System.out.println("за 20мин машина производит " + twentyMinutes * bottle + " бутылок");
+        System.out.println("за 20мин машина производит " + twentyMinutes * bottles / minutes + " бутылок");
         short oneDays = 1440;
-        System.out.println("за 1 день машина производит " + oneDays / bottle + " бутылок");
+        System.out.println("за 1 день машина производит " + oneDays / (bottles / minutes) + " бутылок");
         short threeDays = 4320;
-        System.out.println("за 3 дня машина производит " + threeDays / bottle + " бутылок");
+        System.out.println("за 3 дня машина производит " + threeDays / (bottles / minutes) + " бутылок");
         long oneMonth = 43200;
-        System.out.println("за 1 месяц машина производит " + oneMonth / bottle + " бутылок");
+        System.out.println("за 1 месяц машина производит " + oneMonth / (bottles / minutes) + " бутылок");
 
         byte cans = 120;
         byte Wait = 2;
@@ -68,36 +68,30 @@ public class Main {
         System.out.println("В среднем спортсмену нужно " + Days3 + " дней для похудения" );
 
 
-        int Masha = (int) 67760;
-        int Masha10 = (int) (Masha * 10);
-        int Masha100 = (int) Masha10 / 100;
-        int MashaNew = (int) Masha + (int) Masha100;
-        System.out.println( "Маша после повышения получает " + MashaNew + " руб" );
-        int MashaYear = (int) MashaNew * 12;
-        System.out.println( "Годовой доход Маши теперь составляет " + MashaYear + " руб" );
-        int MashaQueen = (int) MashaYear - ((int) Masha * 12);
-        System.out.println( "Маша теперь получает " + MashaYear + " рублей. Годовой доход вырос на " + MashaQueen + " руб");
+        int masha = (int) 67760;
+        int masha10 = (int) (masha + masha * 0.1);
+        System.out.println( "Маша после повышения получает " + masha10 + " руб" );
+        int mashaYear = (int) masha10 * 12;
+        System.out.println( "Годовой доход Маши теперь составляет " + mashaYear + " руб" );
+        int mashaQueen = (int) mashaYear - ((int) masha * 12);
+        System.out.println( "Маша теперь получает " + mashaYear + " рублей. Годовой доход вырос на " + mashaQueen + " руб");
 
 
 
-        int Denis = (int) 83690;
-        int Denis10 = (int) (Denis * 10);
-        int Denis100 = (int) Denis10 / 100;
-        int DenisNew = (int) Denis + (int) Denis100;
-        System.out.println( "Денис после повышения получает " + DenisNew + " руб" );
-        int DenisYear = (int) DenisNew * 12;
-        System.out.println( "Годовой доход Дениса теперь составляет " + DenisYear + " руб" );
-        int DenisGod = (int) DenisYear - ((int) Denis * 12);
-        System.out.println( "Денис теперь получает " + DenisYear + " рублей. Годовой доход вырос на " + DenisNew + " руб");
+        int denis = (int) 83690;
+        int denis10 = (int) (denis + denis * 0.1);
+        System.out.println( "Денис после повышения получает " + denis10 + " руб" );
+        int denisYear = (int) denis10 * 12;
+        System.out.println( "Годовой доход Дениса теперь составляет " + denisYear + " руб" );
+        int denisGod = (int) denisYear - ((int) denis * 12);
+        System.out.println( "Денис теперь получает " + denisYear + " рублей. Годовой доход вырос на " + denisGod + " руб");
 
-        int Kris = (int) 76230;
-        int Kris10 = (int) (Kris * 10);
-        int Kris100 = (int) Kris10 / 100;
-        int KrisNew = (int) Kris + (int) Kris100;
-        System.out.println( "Кристина после повышения получает " + KrisNew + " руб" );
-        int KrisYear = (int) KrisNew * 12;
-        System.out.println( "Годовой доход Кристины теперь составляет " + KrisYear + " руб" );
-        int KrisQueen = (int) KrisYear - ((int) Denis * 12);
-        System.out.println( "Кристина теперь получает " + KrisYear + " рублей." );
+        int kris = (int) 76230;
+        int kris10 = (int) (kris + kris * 0.1);
+        System.out.println( "Кристина после повышения получает " + kris10 + " руб" );
+        int krisYear = (int) kris10 * 12;
+        System.out.println( "Годовой доход Кристины теперь составляет " + krisYear + " руб" );
+        int krisQueen = (int) krisYear - ((int) kris * 12);
+        System.out.println( "Кристина теперь получает " + krisYear + " рублей. Годовой доход вырос на " + krisQueen + " руб" );
     }
 }
