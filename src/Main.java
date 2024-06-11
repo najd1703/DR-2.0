@@ -20,7 +20,7 @@ public class Main {
         long paper = 480;
         int students = ludmila + anna + ekaterina;
         System.out.println("Всего учеников " + students);
-        int Sheets = (int) (paper / (int) students);
+        long sheetsPerStudent = paper / students;
         System.out.println("На каждого ученика рассчитано " + paper / students + " листов бумаги" );
 
         byte bottles = 16;
@@ -30,11 +30,11 @@ public class Main {
         byte twentyMinutes = 20;
         System.out.println("за 20мин машина производит " + twentyMinutes * bottles / minutes + " бутылок");
         short oneDays = 1440;
-        System.out.println("за 1 день машина производит " + oneDays / (bottles / minutes) + " бутылок");
+        System.out.println("за 1 день машина производит " + (oneDays / minutes) * bottles + " бутылок");
         short threeDays = 4320;
-        System.out.println("за 3 дня машина производит " + threeDays / (bottles / minutes) + " бутылок");
+        System.out.println("за 3 дня машина производит " + (threeDays / minutes) * bottles + " бутылок");
         long oneMonth = 43200;
-        System.out.println("за 1 месяц машина производит " + oneMonth / (bottles / minutes) + " бутылок");
+        System.out.println("за 1 месяц машина производит " + (oneMonth /  minutes) * bottles +  " бутылок");
 
         byte cans = 120;
         byte Wait = 2;
@@ -47,25 +47,25 @@ public class Main {
 
 
         int bananas = (short) (80 * 5);
-        int Milk = (short) (105 * 2);
+        int milkWeight = (short) (105 * 2);
         int iceCream = (short) (2 * 100);
         int egg = (short) (4 * 70);
-        int cocktail = bananas + Milk + iceCream + egg;
+        int cocktail = bananas + milkWeight + iceCream + egg;
         System.out.println("вес продуктов в коктейле составил " + cocktail + " гр.");
         int grPerKg = 1000;
         float kg = (float) cocktail / grPerKg;
         System.out.println("вес продуктов в коктейле составил " + kg + " кг.");
 
 
-        byte WeightS1 = (byte) 7000;
-        byte Mass1 = (byte) 250;
-        byte Mass2 = (byte) 500;
-        int Days1 = WeightS1 / Mass1;
-        System.out.println("Если спортсмен будет терять 250гр веса в день, то ему понадобится " + Days1 + " дней для похудения");
-        int Days2 = WeightS1 / Mass2;
-        System.out.println("Если спортсмен будет терять 500гр веса в день, то ему понадобится " + Days2 + " дней для похудения");
-        float Days3 = (float) (Days1 + Days2) / 2;
-        System.out.println("В среднем спортсмену нужно " + Days3 + " дней для похудения" );
+        byte weightS1 = (byte) 7000;
+        byte mass1 = (byte) 250;
+        byte mass2 = (byte) 500;
+        int days1 = weightS1 / mass1;
+        System.out.println("Если спортсмен будет терять 250гр веса в день, то ему понадобится " + days1 + " дней для похудения");
+        int days2 = weightS1 / mass2;
+        System.out.println("Если спортсмен будет терять 500гр веса в день, то ему понадобится " + days2 + " дней для похудения");
+        float days3 = (float) (days1 + days2) / 2;
+        System.out.println("В среднем спортсмену нужно " + days3 + " дней для похудения" );
 
 
         int masha = (int) 67760;
